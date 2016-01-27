@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name            = "XYDropDownMenu"
-  s.version         = "1.0.0"
+  s.version         = "1.0.1"
   s.summary          = "A dropDownMenu on iOS"
   s.description      = "A dropDownMenu, which implement by Objective-C"
   s.homepage         = "https://github.com/RickHe/XYDropDownMenu.git"
