@@ -1,17 +1,17 @@
 //
-//  XYDorpDownMenu.m
+//  XYDropDownMenu.m
 //  XYDropDownListDemo
 //
 //  Created by hemiying on 16/1/18.
 //  Copyright © 2016年 hemiying. All rights reserved.
 //
 
-#import "XYDorpDownMenu.h"
+#import "XYDropDownMenu.h"
 
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 
-@interface XYDorpDownMenu () <UITableViewDelegate, UITableViewDataSource>
+@interface XYDropDownMenu () <UITableViewDelegate, UITableViewDataSource>
 {
     UITableView *_tableView;
     NSString *_menuTitle;
@@ -28,7 +28,7 @@
 
 @end
 
-@implementation XYDorpDownMenu
+@implementation XYDropDownMenu
 
 #pragma mark - LifeCycle
 /**

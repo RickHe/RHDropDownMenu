@@ -1,5 +1,5 @@
 //
-//  XYDorpDownMenu.h
+//  XYDropDownMenu.h
 //  XYDropDownListDemo
 //
 //  Created by hemiying on 16/1/18.
@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class XYDorpDownMenu;
+@class XYDropDownMenu;
 
 @protocol XYDropDownMenuDelegate <NSObject>
 
@@ -17,11 +17,11 @@
  *  @param menu
  *  @param indexPath
  */
-- (void)XYDropDownMenu:(XYDorpDownMenu *)menu didSelectAtIndexPath:(NSIndexPath *)indexPath;
+- (void)XYDropDownMenu:(XYDropDownMenu *)menu didSelectAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 
-@interface XYDorpDownMenu : UIView
+@interface XYDropDownMenu : UIView
 
 /**
  *  使用数剧初始化

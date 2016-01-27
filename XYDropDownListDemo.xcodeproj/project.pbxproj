@@ -15,9 +15,9 @@
 		519E1B621C4C7A6100E7800E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519E1B601C4C7A6100E7800E /* LaunchScreen.storyboard */; };
 		519E1B6D1C4C7A6100E7800E /* XYDropDownListDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 519E1B6C1C4C7A6100E7800E /* XYDropDownListDemoTests.m */; };
 		519E1B781C4C7A6100E7800E /* XYDropDownListDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 519E1B771C4C7A6100E7800E /* XYDropDownListDemoUITests.m */; };
-		519E1B871C4C7AE800E7800E /* XYDorpDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 519E1B861C4C7AE800E7800E /* XYDorpDownMenu.m */; };
-		519E1B8E1C4C902600E7800E /* opinion_read@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 519E1B8C1C4C902600E7800E /* opinion_read@2x.png */; };
-		519E1B8F1C4C902600E7800E /* opinion_read@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 519E1B8D1C4C902600E7800E /* opinion_read@3x.png */; };
+		51EB48BC1C5897F400646BA4 /* opinion_read@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51EB48B81C5897F400646BA4 /* opinion_read@2x.png */; };
+		51EB48BD1C5897F400646BA4 /* opinion_read@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51EB48B91C5897F400646BA4 /* opinion_read@3x.png */; };
+		51EB48BE1C5897F400646BA4 /* XYDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EB48BB1C5897F400646BA4 /* XYDropDownMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +54,10 @@
 		519E1B731C4C7A6100E7800E /* XYDropDownListDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XYDropDownListDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		519E1B771C4C7A6100E7800E /* XYDropDownListDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYDropDownListDemoUITests.m; sourceTree = "<group>"; };
 		519E1B791C4C7A6100E7800E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		519E1B851C4C7AE800E7800E /* XYDorpDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDorpDownMenu.h; sourceTree = "<group>"; };
-		519E1B861C4C7AE800E7800E /* XYDorpDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDorpDownMenu.m; sourceTree = "<group>"; };
-		519E1B8C1C4C902600E7800E /* opinion_read@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "opinion_read@2x.png"; sourceTree = "<group>"; };
-		519E1B8D1C4C902600E7800E /* opinion_read@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "opinion_read@3x.png"; sourceTree = "<group>"; };
+		51EB48B81C5897F400646BA4 /* opinion_read@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "opinion_read@2x.png"; sourceTree = "<group>"; };
+		51EB48B91C5897F400646BA4 /* opinion_read@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "opinion_read@3x.png"; sourceTree = "<group>"; };
+		51EB48BA1C5897F400646BA4 /* XYDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDropDownMenu.h; sourceTree = "<group>"; };
+		51EB48BB1C5897F400646BA4 /* XYDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDropDownMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,7 @@
 		519E1B511C4C7A6100E7800E /* XYDropDownListDemo */ = {
 			isa = PBXGroup;
 			children = (
-				519E1B8C1C4C902600E7800E /* opinion_read@2x.png */,
-				519E1B8D1C4C902600E7800E /* opinion_read@3x.png */,
+				51EB48B61C5897F400646BA4 /* XYDropDownMenu */,
 				519E1B551C4C7A6100E7800E /* AppDelegate.h */,
 				519E1B561C4C7A6100E7800E /* AppDelegate.m */,
 				519E1B581C4C7A6100E7800E /* ViewController.h */,
@@ -119,8 +118,6 @@
 				519E1B601C4C7A6100E7800E /* LaunchScreen.storyboard */,
 				519E1B631C4C7A6100E7800E /* Info.plist */,
 				519E1B521C4C7A6100E7800E /* Supporting Files */,
-				519E1B851C4C7AE800E7800E /* XYDorpDownMenu.h */,
-				519E1B861C4C7AE800E7800E /* XYDorpDownMenu.m */,
 			);
 			path = XYDropDownListDemo;
 			sourceTree = "<group>";
@@ -149,6 +146,25 @@
 				519E1B791C4C7A6100E7800E /* Info.plist */,
 			);
 			path = XYDropDownListDemoUITests;
+			sourceTree = "<group>";
+		};
+		51EB48B61C5897F400646BA4 /* XYDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				51EB48B71C5897F400646BA4 /* Images */,
+				51EB48BA1C5897F400646BA4 /* XYDropDownMenu.h */,
+				51EB48BB1C5897F400646BA4 /* XYDropDownMenu.m */,
+			);
+			path = XYDropDownMenu;
+			sourceTree = "<group>";
+		};
+		51EB48B71C5897F400646BA4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				51EB48B81C5897F400646BA4 /* opinion_read@2x.png */,
+				51EB48B91C5897F400646BA4 /* opinion_read@3x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,11 +270,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				519E1B8F1C4C902600E7800E /* opinion_read@3x.png in Resources */,
 				519E1B621C4C7A6100E7800E /* LaunchScreen.storyboard in Resources */,
-				519E1B8E1C4C902600E7800E /* opinion_read@2x.png in Resources */,
+				51EB48BD1C5897F400646BA4 /* opinion_read@3x.png in Resources */,
 				519E1B5F1C4C7A6100E7800E /* Assets.xcassets in Resources */,
 				519E1B5D1C4C7A6100E7800E /* Main.storyboard in Resources */,
+				51EB48BC1C5897F400646BA4 /* opinion_read@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +301,7 @@
 			files = (
 				519E1B5A1C4C7A6100E7800E /* ViewController.m in Sources */,
 				519E1B571C4C7A6100E7800E /* AppDelegate.m in Sources */,
-				519E1B871C4C7AE800E7800E /* XYDorpDownMenu.m in Sources */,
+				51EB48BE1C5897F400646BA4 /* XYDropDownMenu.m in Sources */,
 				519E1B541C4C7A6100E7800E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
