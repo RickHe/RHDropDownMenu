@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name            = "XYAddImageView"
   s.version         = "1.0.0"
-  s.summary          = "A UI component that can add and display any more images on iOS"
-  s.description      = "A UI component that can add and display any more images, which implement by Objective-C"
-  s.homepage         = "https://github.com/RickHe/HMYPodTest.git"
-  # s.screenshots      = "nTrg38EPmY/goTuEfegLcfA3NAwyS1sk0PM1j0Gwx*M!/b/dHYBAAAAAAAA&bo=PgFLAgAAAAACeCo!&rf=viewer_4"
+  s.summary          = "A dropDownMenu on iOS"
+  s.description      = "A dropDownMenu, which implement by Objective-C"
+  s.homepage         = "https://github.com/RickHe/XYAddImageView.git"
+  # s.screenshots      = "http://a2.qpic.cn/psb?/V10AI9AY3CwCiW/n66PqQHNIijHlGv1LGCBDcHY6C70jD7H5iIHqCFelJw!/b/dH4BAAAAAAAA&bo=nQH0AgAAAAACFFo!&rf=viewer_4"
   s.license          = 'MIT'
   s.author           = { "何米颖" => "1292711060@qq.com" }
-  s.source           = { :git => "https://github.com/RickHe/HMYPodTest.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/RickHe/XYDropDownMenu.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://github.com/RickHe'
 
   s.platform     = :ios, '7.0'
