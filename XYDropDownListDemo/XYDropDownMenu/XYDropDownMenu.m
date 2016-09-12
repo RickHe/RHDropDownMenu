@@ -8,8 +8,17 @@
 
 #import "XYDropDownMenu.h"
 
-#define kScreenHeight [UIScreen mainScreen].bounds.size.height
-#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define XYScreenHeight [UIScreen mainScreen].bounds.size.height
+#define XYScreenWidth [UIScreen mainScreen].bounds.size.width
+
+#define XYBackgroundViewDefaultColor [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.6]
+#define XYMenuItemDefaultColor [UIColor colorWithRed:0 green:0 blue:0 alpha:0.8]
+
+#define XYDefaultFontSize [UIFont systemFontOfSize:16]
+
+#define XYIndicatorIconDefaultFrame CGRectMake(width - 12 - 16, (height - 16) / 2, 16, 16)
+#define XYMenuNameDefaultFrame CGRectMake(12, (height - 16) / 2, 88, 16)
+#define XYMenuItemTextDefaultFrame CGRectMake(12, (30 - 16) / 2 , 188, 16)
 
 @interface XYDropDownMenu () <UITableViewDelegate, UITableViewDataSource>
 {
@@ -95,20 +104,20 @@
     // 菜单名字属性
     _meneNameTextColor = [UIColor lightGrayColor];
     _menuNameBackgroundColor = [UIColor whiteColor];
-    _meneNameTextFont = [UIFont systemFontOfSize:16];
-    _menuNameFrame = CGRectMake(12, (height - 16) / 2, 88, 16);
+    _meneNameTextFont = XYDefaultFontSize;
+    _menuNameFrame = XYMenuNameDefaultFrame;
     
     // 菜单展开与否指示
     _indicatorIconImage = [UIImage imageNamed:@"opinion_read"];
-    _indicatorIconFrame = CGRectMake(width - 12 - 16, (height - 16) / 2, 16, 16);
+    _indicatorIconFrame = XYIndicatorIconDefaultFrame;
     
     // 菜单项属性
     _separationLineColor = [UIColor whiteColor];
-    _separationLineInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+    _separationLineInsets = UIEdgeInsetsZero;
     _meneItemTextColor = [UIColor lightGrayColor];
-    _menuItemBackgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.8];
-    _meneItemTextFont = [UIFont systemFontOfSize:16];
-    _menuItemTextFrame = CGRectMake(12, (30 - 16) / 2 , 188, 16);
+    _menuItemBackgroundColor = XYMenuItemDefaultColor;
+    _meneItemTextFont = XYDefaultFontSize;
+    _menuItemTextFrame = XYMenuItemTextDefaultFrame;
     _menuItemHeight = 30;
 }
 
@@ -287,6 +296,17 @@
     _menuTitleLab.font = _font;
 }
 
+#pragma mark - Set BackgroundView Property
+- (void)setBackgroundViewColor:(UIColor *)backgroundViewColor {
+    _backgroundViewColor = backgroundViewColor;
+    _backgroundView.backgroundColor = _backgroundViewColor;
+}
+
+- (void)setBackgoundViewAlpha:(CGFloat)backgoundViewAlpha {
+    _backgoundViewAlpha = backgoundViewAlpha;
+    _backgroundView.alpha = backgoundViewAlpha;
+}
+
 #pragma mark - ButtonAction
 /**
  *  点击展开按钮事件
@@ -296,8 +316,9 @@
 - (void)clickToStartAction:(UIButton *)btn {
     btn.selected = !btn.selected;
     if (btn.selected) {
-        _backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0,kScreenWidth , kScreenHeight)];
-        _backgroundView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4];
+        _backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0,XYScreenWidth , XYScreenHeight)];
+        // default color
+        _backgroundView.backgroundColor = XYBackgroundViewDefaultColor;
         [self.superview insertSubview:_backgroundView atIndex:0];
         [self p_showOpenMenuView];
     } else {

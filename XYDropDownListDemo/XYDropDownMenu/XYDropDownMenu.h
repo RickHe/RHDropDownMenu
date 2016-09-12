@@ -65,4 +65,8 @@
 @property (nonatomic, assign) CGRect menuItemTextFrame;
 @property (nonatomic, assign) CGFloat menuItemHeight;
 
+#pragma mark - BackgroundView Property
+@property (nonatomic, strong) UIColor *backgroundViewColor;
+@property (nonatomic, assign) CGFloat backgoundViewAlpha;
+
 @end
