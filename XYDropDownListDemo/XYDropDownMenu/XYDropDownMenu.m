@@ -11,11 +11,14 @@
 #define XYScreenHeight [UIScreen mainScreen].bounds.size.height
 #define XYScreenWidth [UIScreen mainScreen].bounds.size.width
 
+#define XYTableViewRowHeightDefaultHeight 30
+
+// color
 #define XYBackgroundViewDefaultColor [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.6]
 #define XYMenuItemDefaultColor [UIColor colorWithRed:0 green:0 blue:0 alpha:0.8]
-
+// font
 #define XYDefaultFontSize [UIFont systemFontOfSize:16]
-
+// frame
 #define XYIndicatorIconDefaultFrame CGRectMake(width - 12 - 16, (height - 16) / 2, 16, 16)
 #define XYMenuNameDefaultFrame CGRectMake(12, (height - 16) / 2, 88, 16)
 #define XYMenuItemTextDefaultFrame CGRectMake(12, (30 - 16) / 2 , 188, 16)
@@ -381,7 +384,7 @@
 
 //高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 30;
+    return XYTableViewRowHeightDefaultHeight;
 }
 
 // 区尾高度
