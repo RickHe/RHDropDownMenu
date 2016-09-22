@@ -33,9 +33,9 @@
  *  @return self
  */
 - (instancetype)initWithFrame:(CGRect)frame
-                    MenuTitle:(NSString *)title
-                   DataSource:(NSArray *)dataSource
-         MaxDisplayMenuNumber:(NSUInteger)maxDisplayMenuNumber;
+                    menuTitle:(NSString *)title
+                   dataSource:(NSArray *)dataSource
+         maxDisplayMenuNumber:(NSUInteger)maxDisplayMenuNumber;
 
 #pragma mark - Other Property
 @property (nonatomic, readonly, strong) NSArray *dataSource;

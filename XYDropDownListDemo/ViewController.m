@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    XYDropDownMenu *menu = [[XYDropDownMenu alloc] initWithFrame:CGRectMake(100, 100, self.view.bounds.size.width - 200, 30) MenuTitle:@"类型" DataSource:@[@"财务类型", @"非财务类型", @"非财务类型", @"非财务类型", @"非财务类型", @"非财务类型", @"非财务类型"] MaxDisplayMenuNumber:5];
+    XYDropDownMenu *menu = [[XYDropDownMenu alloc] initWithFrame:CGRectMake(100, 100, self.view.bounds.size.width - 200, 30) menuTitle:@"类型" dataSource:@[@"财务类型", @"非财务类型", @"非财务类型", @"非财务类型", @"非财务类型", @"非财务类型", @"非财务类型"] maxDisplayMenuNumber:5];
     menu.separationLineInsets = UIEdgeInsetsMake(0, 0, 0, 0);
     menu.separationLineColor = [UIColor whiteColor];
     [self.view addSubview:menu];

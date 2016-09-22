@@ -16,8 +16,10 @@
 // color
 #define XYBackgroundViewDefaultColor [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.6]
 #define XYMenuItemDefaultColor [UIColor colorWithRed:0 green:0 blue:0 alpha:0.8]
+
 // font
 #define XYDefaultFontSize [UIFont systemFontOfSize:16]
+
 // frame
 #define XYIndicatorIconDefaultFrame CGRectMake(width - 12 - 16, (height - 16) / 2, 16, 16)
 #define XYMenuNameDefaultFrame CGRectMake(12, (height - 16) / 2, 88, 16)
@@ -53,9 +55,9 @@
  *  @return self
  */
 - (instancetype)initWithFrame:(CGRect)frame
-                    MenuTitle:(NSString *)title
-                   DataSource:(NSArray *)dataSource
-         MaxDisplayMenuNumber:(NSUInteger)maxDisplayMenuNumber {
+                    menuTitle:(NSString *)title
+                   dataSource:(NSArray *)dataSource
+         maxDisplayMenuNumber:(NSUInteger)maxDisplayMenuNumber {
     if (self = [super initWithFrame:frame]) {
         _headViewFrame = CGRectMake(0, 0, frame.size.width, frame.size.height);
         _maxDisplayMenuNumber = maxDisplayMenuNumber;
