@@ -12,9 +12,9 @@ RHDropDownMenu
 #### <a id = "默认使用"></a>默认使用
 <!--## <a id="UIWebView01-下拉刷新"></a>UIWebView01-下拉刷新-->
         RHDropDownMenu *menu = [[RHDropDownMenu alloc] initWithFrame:CGRectMake(100, 100, self.view.bounds.size.width - 200, 30)
-        MenuTitle:@"MenuName" 
-        DataSource:@[@"item1", @"item2", @"item3", @"item4", @"item5", @"item6", @"item7"] 
-        MaxDisplayMenuNumber:5];
+        menuTitle:@"MenuName" 
+        dataSource:@[@"item1", @"item2", @"item3", @"item4", @"item5", @"item6", @"item7"] 
+        maxDisplayMenuNumber:5];
         self.view addSubview:menu];
   
   若想要检测到选中菜单事件可设置代理
