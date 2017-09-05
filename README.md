@@ -1,4 +1,4 @@
-XYDropDownMenu
+RHDropDownMenu
 ========================
 
 ![github](http://a2.qpic.cn/psb?/V10AI9AY3CwCiW/n66PqQHNIijHlGv1LGCBDcHY6C70jD7H5iIHqCFelJw!/b/dH4BAAAAAAAA&bo=nQH0AgAAAAACFFo!&rf=viewer_4)
@@ -11,7 +11,7 @@ XYDropDownMenu
 
 #### <a id = "默认使用"></a>默认使用
 <!--## <a id="UIWebView01-下拉刷新"></a>UIWebView01-下拉刷新-->
-        XYDorpDownMenu *menu = [[XYDorpDownMenu alloc] initWithFrame:CGRectMake(100, 100, self.view.bounds.size.width - 200, 30)
+        RHDropDownMenu *menu = [[RHDropDownMenu alloc] initWithFrame:CGRectMake(100, 100, self.view.bounds.size.width - 200, 30)
         MenuTitle:@"MenuName" 
         DataSource:@[@"item1", @"item2", @"item3", @"item4", @"item5", @"item6", @"item7"] 
         MaxDisplayMenuNumber:5];
@@ -23,7 +23,7 @@ XYDropDownMenu
   
   必须要实现方法 : 
         
-        - (void)XYDropDownMenu:(XYDorpDownMenu *)menu didSelectAtIndexPath:(NSIndexPath *)indexPath;
+        - (void)RHDropDownMenu:(XYDorpDownMenu *)menu didSelectAtIndexPath:(NSIndexPath *)indexPath;
 
 
 #### <a id = "自定义效果"></a>自定义效果
