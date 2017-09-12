@@ -5,11 +5,11 @@ RHDropDownMenu
 
 目录
 --------------------------
-* [默认使用] (#默认使用)
+* [默认使用](#默认使用)
 
-* [自定义效果] (#自定义效果)
+* [自定义效果](#自定义效果)
 
-#### <a id = "默认使用"></a>默认使用
+#### <span id = "默认使用">默认使用</span>
 <!--## <a id="UIWebView01-下拉刷新"></a>UIWebView01-下拉刷新-->
         RHDropDownMenu *menu = [[RHDropDownMenu alloc] initWithFrame:CGRectMake(100, 100, self.view.bounds.size.width - 200, 30)
         menuTitle:@"MenuName" 
